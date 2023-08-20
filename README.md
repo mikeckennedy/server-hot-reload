@@ -67,7 +67,7 @@ However you do it, the static URLs should look something like this,
 (notice the **?v=** hash ID):
 
 ```html
-<link href="/static//site.css?v=670022" rel="stylesheet">
+<link href="/static/site.css?v=670022" rel="stylesheet">
 
 <img src="/static/img/logo.webp?v=a4c931" />
 ```
