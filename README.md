@@ -9,13 +9,14 @@ all web technologies, built out on a FastAPI / Tailwind project.
 Just download and include the script at the top of your web:
 
 ```html
-<script tal:condition="dev_mode" src="/static/js/server-hot-reload.js">
-</script>
+<script tal:condition="dev_mode" src="/static/js/server-hot-reload.js"></script>
 ```
 The script polls the current URL as you navigate around. 
 It will compare the exact contents of the returned HTML. 
 If it changes in any way, the script will instantly reload the
-page.
+page. Be sure to include it only in your dev versions. 
+Notice we're testing `tal:condition="dev_mode"` (Chameleon) in
+our example.
 
 ## Configure pooling interval
 
