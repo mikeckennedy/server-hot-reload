@@ -63,7 +63,8 @@ To make this happen, you need to append some sort of ID to
 your static resources (this is great for stale content busting 
 in general). In Python, [I use this bit of code](https://github.com/talkpython/fast-python-webapps-with-cdns/blob/main/code/ch8_perf_testing/infrastructure/cache_buster.py).
 
-However you do it, the static URLs should look like (notice **v=**):
+However you do it, the static URLs should look something like 
+(notice the **?v=** hash ID):
 
 ```html
 <link href="/static//site.css?v=670022" rel="stylesheet">
