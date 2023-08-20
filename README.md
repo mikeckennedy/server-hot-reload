@@ -18,7 +18,7 @@ page. Be sure to include it only in your dev versions.
 Notice we're testing `tal:condition="dev_mode"` (Chameleon) in
 our example.
 
-## Configure pooling interval
+## Configure polling interval
 
 To change the polling interval (default of once per sec), just
 edit the section:
