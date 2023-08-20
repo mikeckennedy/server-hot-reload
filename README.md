@@ -52,9 +52,9 @@ For reloading, that looks like:
 1. Edit the source CSS file
 2. Tailwind watcher generates a built CSS file
 3. Built CSS file is included the Python web HTML template
-4. Template appends a hash ID for the state of the file
-5. Changes to the source trigger a change in the ID
-6. Page contents change, script does a reload
+4. Template appends a hash ID for the state of the CSS file
+5. Changes to the source CSS thus trigger a change in the final ID
+6. New ID means the page contents change and the script does a reload
 
 So in that way, even editing an input file to tailwind will 
 auto refresh all browsers pointed at the page during development.
@@ -66,10 +66,9 @@ in general). In Python, [I use this bit of code](https://github.com/talkpython/f
 However you do it, the static URLs should look like (notice **v=**):
 
 ```html
-<link href="/static/release/css/site.css?v=670022" rel="stylesheet">
+<link href="/static//site.css?v=670022" rel="stylesheet">
 
-<img class="h-12 w-auto rounded-full border-solid border-gray-300"
-     src="/static/img/logo/logo-200.webp?v=a4c931" />
+<img src="/static/img/logo.webp?v=a4c931" />
 ```
 
 
