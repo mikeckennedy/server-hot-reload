@@ -31,7 +31,7 @@ might make sense on very slow pages.
 
 ## Pausing the script
 
-Usually you just want this thing to constantly
+Usually you just want this thing to constantly check the dev server. 
 But there are times when it's just noise. For example, if you're
 debugging the web app and have a break point you're stepping
 through, the extra requests may interfere. 
